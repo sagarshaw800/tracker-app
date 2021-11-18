@@ -1,0 +1,255 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+a{
+  text-decoration: none;
+}
+.container{
+  padding: 24px 20%;
+  margin: auto;
+}
+button,select{
+  border: none;
+  outline: none;
+  cursor: pointer;
+  height: 40px;
+  width: 120px;
+  font-size: medium;
+}
+input{
+  width: 240px;
+  height: 40px;
+  border: 1px solid var(--grey-color);
+  padding: 10px;
+  outline: none;
+}
+textarea{
+  border: 1px solid var(--grey-color);
+  padding: 10px;
+  outline: none;
+}
+.red{
+  color: #e85d04;
+  margin: 0px 10px;
+}
+:root{
+  --grey-color: #ccc;
+  --grey-color2: #f0f0f0;
+  --blue-color: #1d3557;
+  --secondary-color: #b5e48c;
+}
+
+
+
+/* ! Navbar */
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 20%;
+  background-color: var(--blue-color);
+  color: white;
+}
+.navbar h1{
+  cursor: pointer;
+  color: white;
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  width: 280px;
+}
+.navBtns{
+  width: 32%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+
+/* !expenseDetails */
+
+.expenseDetails{
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 24px 20%;
+  background-color: var(--secondary-color);
+}
+.expenseDetails h1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.expenseDetails button{
+  margin-top: 32px;
+  background-color: var(--blue-color);
+  color: white;
+}
+
+
+/*! ExpenseFilterForm*/
+
+.expenseFilterForm Form{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.expenseFilterForm select{
+  border: 1px solid var(--grey-color);
+}
+
+
+/* ! ExpenseWrapper */
+
+.expenseWrapper{
+  padding: 0px 20%;
+}
+.expenseWrapper .header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 160px 15px 15px;
+  background-color: var(--secondary-color);
+}
+.expenseList{
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  padding: 5px 20px;
+  border: 2px solid var(--grey-color2);
+  border-bottom: 1px solid var(--grey-color2);
+  font-size: larger;
+  /* height: 35vh;
+  overflow: scroll; */
+}
+.expenseList .expenseDate{
+  margin-top: 10px;
+  font-size: small;
+}
+.expenseList .amount{
+  margin-right: -345px;
+}
+.expenseList .btns{
+  width: 4vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.expenseList .btns .edit{
+  height: 100%;
+  width: 100%;
+}
+.expenseList .delete{
+  cursor: pointer;
+  margin: 0px 20px;
+}
+.listWrapper{
+  height: 50vh;
+  overflow: scroll;
+}
+.listWrapper .right{
+  width: 26%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.edit{
+  color: black;
+}
+
+
+
+
+
+/*! AddExpenseForm  */
+.addExpenseForm{
+  background-color: var(--secondary-color);
+}
+.addExpenseForm h1{
+  text-align: center;
+}
+.addExpenseForm form{
+  margin: 40px 0px;
+  padding: 0px 40px;
+  height: 55vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.addExpenseForm form input,textarea{
+  width: 100%;
+  opacity: 0.7;
+}
+.addExpenseForm form button{
+  background-color: var(--blue-color);
+  color: white;
+}
+
+
+/* !AddExpense PAGE
+.bg-image img{
+  position: absolute;
+  width: 100vw;
+  height: 97vh;
+  top: 0;
+  z-index: -4;
+} */
+
+
+
+
+/* !Theme Page */
+
+.themeBar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.switchApp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.switchApp button{
+  width:auto;
+  padding: 0px 20px;
+  background-color: var(--blue-color);
+  color: white;
+}
+.theme{
+  width: 64px;
+  height: 64px;
+  border: 5px solid var(--grey-color);
+  border-radius: 10px;
+}
+.themeBar :nth-child(n){
+  background: linear-gradient(90deg,#1d3557 50%, #b5e48c 50%);
+}
+.themeBar :nth-child(2){
+  background: linear-gradient(90deg,#1d3557 50%, #d1b3c4 50%);
+}
+.themeBar :nth-child(3){
+  background: linear-gradient(90deg,#1d3557 50%, #a8dadc 50%);
+}
+.themeBar :nth-child(4){
+  background: linear-gradient(90deg,#1d3557 50%, #fec5bb 50%);
+}
+.themeBar :nth-child(5){
+  background: linear-gradient(90deg,#1d3557 50%, #f0f3bd 50%);
+}
+
+
+
+
+
+
+
+
